@@ -1,5 +1,7 @@
 # downYoutube
 
+simple python youtube downloader
+
 ## install
 
 install dependencies
