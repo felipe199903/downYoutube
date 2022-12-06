@@ -1,13 +1,15 @@
 from pytube import YouTube
 
-def Download(link):
-  youtubeObject = YouTube(link)
-  youtubeObject = youtubeObject.streams.get_highest_resolution()
+def download(link):
+  youtube_object = YouTube(link)
+  youtube_object = youtube_object.streams.get_highest_resolution()
+
   try:
-      youtubeObject.download()
-  except:
-    print("There has been an error in downloading your youtube video")
+      youtube_object.download()
+  except TypeError as e:
+    raise TypeError("There has been an error in downloading your youtube video") from e
+
   print("Download has completed!")
 
 link = input("Youtube URL: ")
-Download(link)
+download(link)
