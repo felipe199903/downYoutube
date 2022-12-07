@@ -1,8 +1,8 @@
 from pytube import YouTube
 
 
-def download(link):
-    youtube_object = YouTube(link)
+def download(video_url):
+    youtube_object = YouTube(video_url)
     youtube_object = youtube_object.streams.get_highest_resolution()
 
     try:
