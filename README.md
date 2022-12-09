@@ -1,6 +1,6 @@
 # downYoutube
 
-simple python youtube downloader
+simple python youtube downloader.
 
 ## install
 
