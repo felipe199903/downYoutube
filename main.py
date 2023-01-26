@@ -8,7 +8,8 @@ def download(video_url):
     try:
         youtube_object.download(output_path='download')
     except TypeError as e:
-        raise TypeError("There has been an error in downloading your youtube video") from e
+        raise TypeError(
+            "There has been an error in downloading your youtube video") from e
 
     print("Download has completed!")
 
